@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ybook</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                y8book
+            </div>
+            <ul>
+                <li><img src="./assets/Socialbook_img/notification.png" alt=""></li>
+                <li><img src="./assets/Socialbook_img/inbox.png" alt=""></li>
+                <li><img src="./assets/Socialbook_img/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="./assets/Socialbook_img/search.png" alt="">
+                <input type="text" name="" placeholder="Search" id="">
+            </div>
+            <div class="nav-user-icon online" onclick="openSettingMenu()">
+                <img src="./assets/Socialbook_img/profile-pic.jpg" alt="">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="./assets/Socialbook_img/profile-pic.jpg">
+                    <div>
+                        <p>Pham Van Huy</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="./assets/Socialbook_img/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="./assets/Socialbook_img/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="./assets/Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="./assets/Socialbook_img/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="./assets/Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="./assets/Socialbook_img/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="./assets/Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="./assets/Socialbook_img/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="./assets/Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+            </div> 
+        </div>
+    </nav>
+    <div class="container">
+        <!-- left sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="./assets/Socialbook_img/news.png" alt="">Latest News</a>
+                <a href="#"><img src="./assets/Socialbook_img/friends.png" alt="">Friends</a>
+                <a href="#"><img src="./assets/Socialbook_img/group.png" alt="">Group</a>
+                <a href="#"><img src="./assets/Socialbook_img/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="./assets/Socialbook_img/watch.png" alt="">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./assets/Socialbook_img/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="./assets/Socialbook_img/shortcut-2.png" alt="">Web Design</a>
+                <a href="#"><img src="./assets/Socialbook_img/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href="#"><img src="./assets/Socialbook_img/shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./assets/Socialbook_img/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="./assets/Socialbook_img/member-1.png">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="./assets/Socialbook_img/member-2.png">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="./assets/Socialbook_img/member-3.png">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="./assets/Socialbook_img/member-4.png">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./assets/Socialbook_img/profile-pic.jpg">
+                    <div>
+                        <p>Pham Van Huy</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Huy?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="./assets/Socialbook_img/live-video.png"> Live Video</a>
+                        <a href="#"><img src="./assets/Socialbook_img/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="./assets/Socialbook_img/feeling.png"> Feling/Activity</a>
+                    </div>
+                </div>                
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg">
+                        <div>
+                            <p>Pham Van Huy</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">John helped me so much when I lost my job. A friend in need is a friend indeed. <a href="#">#huyyenthanh1999</a> <a href="#">#YoutubeChannel</a></p>
+                <img src="./assets/Socialbook_img/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./assets/Socialbook_img/like-blue.png">
+                            120
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/comments.png">
+                            100
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/share.png">
+                            20
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg">
+                        <div>
+                            <p>Pham Van Huy</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">John helped me so much when I lost my job. A friend in need is a friend indeed. <a href="#">#huyyenthanh1999</a> <a href="#">#YoutubeChannel</a></p>
+                <img src="./assets/Socialbook_img/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./assets/Socialbook_img/like-blue.png">
+                            120
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/comments.png">
+                            100
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/share.png">
+                            20
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg">
+                        <div>
+                            <p>Pham Van Huy</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">John helped me so much when I lost my job. A friend in need is a friend indeed. <a href="#">#huyyenthanh1999</a> <a href="#">#YoutubeChannel</a></p>
+                <img src="./assets/Socialbook_img/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./assets/Socialbook_img/like-blue.png">
+                            120
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/comments.png">
+                            100
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/share.png">
+                            20
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg">
+                        <div>
+                            <p>Pham Van Huy</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">John helped me so much when I lost my job. A friend in need is a friend indeed. <a href="#">#huyyenthanh1999</a> <a href="#">#YoutubeChannel</a></p>
+                <img src="./assets/Socialbook_img/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./assets/Socialbook_img/like-blue.png">
+                            120
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/comments.png">
+                            100
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/share.png">
+                            20
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg">
+                        <div>
+                            <p>Pham Van Huy</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">John helped me so much when I lost my job. A friend in need is a friend indeed. <a href="#">#huyyenthanh1999</a> <a href="#">#YoutubeChannel</a></p>
+                <img src="./assets/Socialbook_img/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./assets/Socialbook_img/like-blue.png">
+                            120
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/comments.png">
+                            100
+                        </div>
+                        <div>
+                            <img src="./assets/Socialbook_img/share.png">
+                            20
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./assets/Socialbook_img/profile-pic.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+
+        <!-- right side bar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertaisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="./assets/Socialbook_img/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./assets/Socialbook_img/member-1.png">        
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./assets/Socialbook_img/member-2.png">        
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./assets/Socialbook_img/member-3.png">        
+                </div>
+                <p>Samona Rose</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2021 - Huy Pham</p>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
